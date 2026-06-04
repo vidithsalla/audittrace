@@ -1,0 +1,16 @@
+.DS_Store
+.pytest_cache
+__pycache__
+*.pyc
+.coverage
+coverage
+htmlcov
+dist
+build
+.env
+
+apps/api/audittrace.db
+apps/web/.next
+apps/web/node_modules
+apps/web/tsconfig.tsbuildinfo
+apps/web/.env.local

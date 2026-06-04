@@ -1,0 +1,10 @@
+case_key,specialty,service_code,question_set,expected_primary_issue,notes
+aba_97155_clean_pass_001,aba,97155,ABA-97155-v1,none,Complete rationale and individualized observation
+aba_97155_missing_rationale_001,aba,97155,ABA-97155-v1,protocol_change_rationale,Protocol changed but no reason why
+aba_97155_duration_mismatch_001,aba,97155,ABA-97155-v1,duration_unit_mismatch,60 minutes but 5 units
+aba_97155_v1_pass_v2_fail_001,aba,97155,ABA-97155-v2,individualized_observation,Generic observation passes v1 but fails stricter v2
+aba_97156_missing_uptake_001,aba,97156,ABA-97156-v1,caregiver_skill_uptake,Caregiver was present but no skill uptake evidence
+hospice_vague_prognosis_001,hospice,,Hospice-Eligibility-v1,terminal_prognosis_support,Vague prognosis with no measurable decline
+hospice_poc_mismatch_001,hospice,,Hospice-Eligibility-v1,plan_of_care_alignment,Nursing note conflicts with plan of care
+bh_weak_mednec_001,behavioral_health,,BehavioralHealth-MedNec-v1,medical_necessity_support,Session activities documented but no patient-specific necessity
+adversarial_invalid_evidence_001,aba,97155,ABA-97155-v1,insufficient_evidence,Mock model returns quote not present in source note
