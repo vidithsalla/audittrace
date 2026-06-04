@@ -1,13 +1,7 @@
-# OS/editor
+# macOS
 .DS_Store
 
-# Environment and local secrets
-.env
-.env.local
-.env.*.local
-apps/web/.env.local
-
-# Python caches, virtualenvs, and reports
+# Python
 __pycache__/
 **/__pycache__/
 *.py[cod]
@@ -24,18 +18,42 @@ htmlcov/
 .venv/
 venv/
 env/
+*.db
+*.sqlite
+*.sqlite3
 
-# Node and Next.js generated output
+# FastAPI / local runtime
+apps/api/audittrace.db
+
+# Node / Next.js
 node_modules/
 **/node_modules/
 .next/
 **/.next/
-apps/web/tsconfig.tsbuildinfo
-
-# Build artifacts
+out/
 dist/
 build/
+*.tsbuildinfo
+apps/web/.next/
+apps/web/node_modules/
+apps/web/tsconfig.tsbuildinfo
 
-# Local runtime database
-audittrace.db
-apps/api/audittrace.db
+# Env / secrets
+.env
+.env.*
+!.env.example
+apps/web/.env
+apps/web/.env.local
+apps/api/.env
+apps/api/.env.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
