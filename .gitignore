@@ -1,16 +1,41 @@
+# OS/editor
 .DS_Store
-.pytest_cache
-__pycache__
-*.pyc
-.coverage
-coverage
-htmlcov
-dist
-build
-.env
 
-apps/api/audittrace.db
-apps/web/.next
-apps/web/node_modules
-apps/web/tsconfig.tsbuildinfo
+# Environment and local secrets
+.env
+.env.local
+.env.*.local
 apps/web/.env.local
+
+# Python caches, virtualenvs, and reports
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+.venv/
+venv/
+env/
+
+# Node and Next.js generated output
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+apps/web/tsconfig.tsbuildinfo
+
+# Build artifacts
+dist/
+build/
+
+# Local runtime database
+audittrace.db
+apps/api/audittrace.db
