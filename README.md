@@ -28,6 +28,36 @@ Frontend build: passed
 One-command verifier: ./scripts/verify.sh passed
 ```
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Documents
+
+![Documents](docs/screenshots/documents.png)
+
+### Document Detail
+
+![Document detail](docs/screenshots/document-detail.png)
+
+### Evidence-Backed Audit Finding
+
+![Evidence-backed audit finding](docs/screenshots/audit-detail-evidence.png)
+
+### Fail-Closed Insufficient Evidence Downgrade
+
+![Fail-closed insufficient evidence downgrade](docs/screenshots/audit-detail-insufficient-evidence.png)
+
+### Eval Dashboard
+
+![Eval dashboard](docs/screenshots/evals.png)
+
+### Versioned Question Sets
+
+![Versioned question sets](docs/screenshots/question-sets.png)
+
 ## Important Disclaimer
 
 AuditTrace uses synthetic data only. It is not medical advice, not a clinical decision system, not affiliated with Brellium, does not use real PHI, and does not claim HIPAA compliance.

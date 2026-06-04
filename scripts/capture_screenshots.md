@@ -1,6 +1,6 @@
 # Capture Screenshots
 
-This repo does not add a screenshot automation dependency for Phase 6. Use this manual workflow to capture real screenshots from the seeded local app.
+This repo includes a safe Playwright screenshot command. It captures real screenshots from the seeded local app only.
 
 ## Start The App
 
@@ -24,6 +24,29 @@ Open:
 ```txt
 http://localhost:3000
 ```
+
+## Run The Capture Script
+
+```bash
+cd apps/web
+AUDITTRACE_BASE_URL=http://localhost:3000 npm run screenshots
+```
+
+Use `AUDITTRACE_API_BASE_URL` if the backend is not on the default local port:
+
+```bash
+AUDITTRACE_BASE_URL=http://localhost:3010 \
+AUDITTRACE_API_BASE_URL=http://localhost:8010 \
+npm run screenshots
+```
+
+Safety properties:
+
+- only local app/API hosts are accepted
+- uses isolated Playwright Chromium
+- fixed viewport: `1440x1100`
+- full-page PNG output
+- waits for visible UI text before each screenshot
 
 ## Capture Targets
 
