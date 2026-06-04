@@ -307,18 +307,9 @@ Frontend typecheck: passed
 Frontend build: passed
 ```
 
-## Screenshots
+## Screenshot Capture Workflow
 
-Screenshot instructions are in [docs/screenshots/README.md](docs/screenshots/README.md). The repo intentionally does not include fake screenshots.
-
-Recommended captures:
-
-- dashboard
-- document detail audit run
-- audit detail evidence spans
-- audit detail insufficient-evidence downgrade
-- eval dashboard
-- question sets
+Reviewer screenshots are committed as PNG files under [docs/screenshots](docs/screenshots) and embedded near the top of this README. To refresh them from the local seeded app, follow [docs/screenshots/README.md](docs/screenshots/README.md).
 
 ## Tradeoffs And Limitations
 
